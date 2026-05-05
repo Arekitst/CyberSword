@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Rubik+Glitch&family=Tiny5&family=Zen+Dots&display=swap");
+
+html {
+  --hedlinetext: "JetBrains Mono", monospace;
+  --glitchFont: "Rubik Glitch", system-ui;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--hedlinetext);
+}
+
+.logo {
+  font-family: "Zen Dots", sans-serif;
+  font-weight: 1400;
+  color: green;
+  font-style: normal;
+}
+
+.starting_container {
+  display: flex;
+  animation: backgroundAnimation 5s linear ease-in;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle, #093e04 0%, black);
+}
+.starting_container p {
+  font-family: var(--glitchFont);
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.starting_container_P {
+  position: absolute;
+  font-family: var(--hedlinetext);
+  font-size: 20px;
+  width: 70vw;
+  height: 60vh;
+}
+
+.User_Card_Container {
+  background: radial-gradient(
+    circle 500px at 50% 300px,
+    rgba(16, 185, 129, 0.35),
+    transparent
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Life_card {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Life_card img {
+  width: 500px;
+  height: 500px;
+  margin-right: 50px;
+  margin-top: 300px;
+}
+
+.UserCardText {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: 20px;
+}
+.UserCardText p {
+  font-family: var(--hedlinetext);
+  font-size: 30px;
+  margin: 20px;
+}
+
+footer p {
+  font-family: var(--glitchFont);
+  font-size: 30px;
+  color: green;
+}
+
+footer img {
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.HL-logo {
+  width: 150px;
+  height: 200px;
+}
+
+.usercardtext {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin: 20px;
+}
+
+.usercardtext-2 p {
+  width: 70%;
+  font-family: var(--hedlinetext);
+  font-size: 30px;
+  margin: 20px;
+}
+
+.how_they_get_Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  background:
+    radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(34, 197, 94, 0.25),
+      transparent 70%
+    ),
+    #000000;
+}
+
+.how_they_get_text_container {
+  position: absolute;
+  margin: 30px;
+  right: 45vw;
+  font-size: 30px;
+  font-family: var(--hedlinetext);
+  width: 50%;
+  height: 100vh;
+}
+
+.how_they_get_text_container1 {
+  margin: 30px;
+  position: relative;
+  font-size: 30px;
+  font-family: var(--hedlinetext);
+  width: 50%;
+  height: 100vh;
+  margin-right: auto;
+}
+.how_they_get_svg_container img {
+  width: 500px;
+  height: 500px;
+}
+.how_they_get_svg_container {
+  width: 50vw;
+  height: 100vh;
+}
+
+/* Основной контейнер для телефона */
+.phone {
+  position: relative;
+  /* Задай телефону ширину, которая тебе нужна в макете */
+  width: 350px;
+  margin: 40px;
+}
+
+.phone1{
+  position: relative;
+  bottom: 50px;
+  width: 573px;
+  height: 681px;
+}
+.phone2{
+  position: relative;
+  bottom: 50px;
+  width: 573px;
+  height: 681px;
+}
+.Telegram_bot_container{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.Telegram_bot_container_text{
+  width: 50vw;
+  height: 100vw;
+  font-size: 30px;
+  font-family:var(--hedlinetext);
+}
+
+@keyframes backgroundAnimation {
+  0%,
+  100% {
+    /* Начинаем из центра */
+    background-position: 50% 50%;
+  }
+  25% {
+    /* Сдвигаем влево вверх */
+    background-position: 0% 0%;
+  }
+  50% {
+    /* Сдвигаем вправо вниз */
+    background-position: 100% 100%;
+  }
+  75% {
+    /* Сдвигаем влево вниз */
+    background-position: 0% 100%;
+  }
+}

@@ -1,0 +1,1 @@
+*This project is a site for MAN. Cybersecurity theme*
